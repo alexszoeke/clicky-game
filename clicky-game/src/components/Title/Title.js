@@ -11,11 +11,11 @@ const Title = (props) =>
         </li>
         
         <li>
-        Click an image to begin!
+        {props.message}
         </li>
 
         <li>
-        SCORE HERE LATER
+        Current Score: {props.currentScore} | Top Score: {props.topScore}
         </li>
         </h1>
         </ul>
