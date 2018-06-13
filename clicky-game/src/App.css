@@ -39,15 +39,15 @@
   background: white;
 }
 
-.header {
-  background-image: url("https://www.planwallpaper.com/wallpaper-background");
+/* .header {
+  background-image: url("https://cdn.shopify.com/s/files/1/0653/3653/collections/DUNDERMIFFLINBLACK_480x480.gif?v=1501084360");
   background-color: #2c323c;
-  background-repeat: repeat;
-  color: #fff;
+  /* background-repeat: repeat; */
+  /* color: #fff;
   min-height: 50px;
   padding: 0px 20px;
   padding-bottom: 110px
-}
+}  */
 
 p {
   display: none;

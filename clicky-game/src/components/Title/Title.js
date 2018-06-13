@@ -7,7 +7,7 @@ const Title = (props) =>
         <ul>
         <h1>
         <li className="brand">
-        Clicky Game
+        <img src="./assets/images/logo.gif" alt="Logo" width="300px"/>
         </li>
         
         <li>
@@ -20,9 +20,9 @@ const Title = (props) =>
         </h1>
         </ul>
     </div>
-    <header className="header">
+    {/* <header className="header">
     <p>Clicky Game</p>
-    </header>
+    </header> */}
 
     <div className="container">
         {props.children}
