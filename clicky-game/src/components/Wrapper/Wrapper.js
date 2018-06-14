@@ -1,9 +1,10 @@
 import React from "react";
 import "./Wrapper.css";
 
-const Wrapper = props => <div className="container">
+const Wrapper = (props) => <div className="container-fluid">
 
-<div className="wrapper">{props.children}
+<div className="container-fluid">
+        {props.children}
 </div>
 
 </div>;

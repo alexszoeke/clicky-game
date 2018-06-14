@@ -22,13 +22,13 @@
   font-size: large;
 }
 
-.nav-bar {
+.navbar {
   padding: .75rem 4rem;
   width: 100%;
   background-color: cadetblue
 }
 
-.nav-bar li {
+.navbar li {
   display: inline-block;
   padding: 26px 0;
   width: 33.3%;
@@ -37,6 +37,7 @@
 
 .wrapper {
   background: white;
+  width: 100%;
 }
 
 /* .header {

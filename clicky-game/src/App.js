@@ -1,11 +1,11 @@
 import React, {
   Component
 } from "react";
-import FriendCard from "./components/CharacterCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import characters from "./characters.json";
 import "./App.css";
+import CharacterCard from "./components/CharacterCard";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -74,14 +74,14 @@ class App extends Component {
 
   render() {
     return ( 
-      
-      <Title currentScore = {this.currentScore}
-    topScore = {this.topScore}
-    message = {this.message}
+    <Wrapper>
+      <Title currentScore = {this.state.currentScore}
+    topScore = {this.state.topScore}
+    message = {this.state.message}
       >
-       <Wrapper > 
+      <div className="wrapper">
        {this.state.characters.map(character => ( 
-         <FriendCard id = {character.id}
+         <CharacterCard id = {character.id}
           key = {character.id}
           image = {character.image}
           handleOnClick={this.handleOnClick}
@@ -90,8 +90,10 @@ class App extends Component {
           handleShuffle={this.handleShuffle}
           />
         ))} 
-        </Wrapper> 
+      </div>
+ 
       </Title>
+      </Wrapper>
     );
   }
 }

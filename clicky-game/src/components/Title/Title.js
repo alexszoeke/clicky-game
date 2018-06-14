@@ -3,12 +3,14 @@ import "./Title.css";
 
 const Title = (props) => 
 <div>
-    <div className="nav-bar">
+    <div className="navbar">
         <ul>
         <h1>
         <li className="brand">
         <img src="./assets/images/logo.gif" alt="Logo" width="300px"/>
         </li>
+        
+        
         
         <li>
         {props.message}
@@ -24,7 +26,7 @@ const Title = (props) =>
     <p>Clicky Game</p>
     </header> */}
 
-    <div className="container">
+    <div className="container-fluid">
         {props.children}
     </div>
 </div>

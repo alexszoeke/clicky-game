@@ -3,6 +3,8 @@ import "./CharacterCard.css";
 
 const CharacterCard = (props) => (
   <div>
+    <div className="wrapper">{props.children}
+
     <span onClick={() => props.handleOnClick(props.id)} className="clicked">
       <div className="card">
         <div className="img-container">
@@ -10,6 +12,7 @@ const CharacterCard = (props) => (
         </div>
         </div>
       </span>
+      </div>
     </div>
 );
 
